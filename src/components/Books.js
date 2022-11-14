@@ -15,7 +15,7 @@ function Books({ book, moveBook }) {
           <select
             value={book.shelf ? book.shelf : "none"}
             onChange={(e) => moveBook(book, e.target.value)}>
-            <option value="none" disabled>
+            <option value="move-to" disabled>
               Move to...
             </option>
             <option value="currentlyReading">Currently Reading</option>
@@ -26,7 +26,9 @@ function Books({ book, moveBook }) {
         </div>
       </div>
       <div className="book-title">{book.title}</div>
-      <div className="book-authors"> {book.authors}</div>
+      <div className="book-authors">
+        {book.authors && book.authors.join(", ")}
+      </div>
     </div>
   );
 }
