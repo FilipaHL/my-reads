@@ -8,7 +8,7 @@
 
 ## To Install The App
 
--` npm install`
+- npm install
 
 - npm start
 
