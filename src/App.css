@@ -11,17 +11,29 @@ body,
   background: white;
 }
 
+@font-face {
+  font-family: "Southland";
+  src: url("./Fonts/Southland\ TTF.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./Fonts/Comfortaa.ttf");
+}
+
 /* main page */
 
 .list-books-title {
   padding: 10px 0;
-  background: #2e7c31;
+  background: #f4bfc5;
   text-align: center;
 }
 .list-books-title h1 {
-  font-weight: 400;
+  font-weight: 200;
   margin: 0;
   color: white;
+  font-family: "Southland";
+  font-size: 100px;
 }
 
 .list-books-content {
@@ -41,6 +53,9 @@ body,
 
 .bookshelf-title {
   border-bottom: 1px solid #dedede;
+  color: #4ca49e;
+  font-family: "Comfortaa";
+  font-size: 25px;
 }
 .bookshelf-books {
   text-align: center;
@@ -56,7 +71,7 @@ body,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #4ca49e;
   background-image: url("./icons/add.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -74,11 +89,11 @@ body,
   left: 0;
   z-index: 5;
   display: flex;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 10px #ffafb8, 0 0 6px #4ca49e;
 }
 .search-books-input-wrapper {
   flex: 1;
-  background: #e9e;
+  background: rgb(250, 177, 200);
 }
 .search-books-bar input {
   width: 100%;
@@ -112,7 +127,6 @@ body,
   list-style-type: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -150,18 +164,20 @@ body,
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #60ac5d;
+  background: #ffafb8;
   background-image: url("./icons/arrow-drop-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px #4ca49e, 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .book-shelf-changer select {
   width: 100%;
   height: 100%;
   opacity: 0;
   cursor: pointer;
+  background-color: whitesmoke;
+  color: #4ca49e;
 }
 
 /* book cover */
