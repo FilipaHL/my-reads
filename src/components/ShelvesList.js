@@ -6,7 +6,6 @@ const ShelvesList = ({ allBooks, moveBook }) => {
   );
   const wantToRead = allBooks.filter((books) => books.shelf === "wantToRead");
   const read = allBooks.filter((books) => books.shelf === "read");
-  console.log(wantToRead);
 
   return (
     <div>

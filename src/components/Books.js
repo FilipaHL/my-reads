@@ -1,5 +1,4 @@
 function Books({ book, moveBook }) {
-  console.log(book);
   return (
     <div className="book">
       <div className="book-top">
@@ -14,7 +13,7 @@ function Books({ book, moveBook }) {
           }}></div>
         <div className="book-shelf-changer">
           <select
-            value={book.shelf}
+            value={book.shelf ? book.shelf : "none"}
             onChange={(e) => moveBook(book, e.target.value)}>
             <option value="none" disabled>
               Move to...
